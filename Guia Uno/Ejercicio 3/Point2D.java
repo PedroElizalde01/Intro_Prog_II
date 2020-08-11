@@ -6,7 +6,7 @@ public class Point2D {
     this.x = x;
     this.y = y;
   }
-  public float getDistance(Point2D point) {
+  public float getDistance(Point2D point) { //NO ENTIENDO BIEN ESTE- Pedro
 
 
   }
