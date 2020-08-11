@@ -7,25 +7,31 @@ public class BankAccount{
     this.balance = balance;
   }
 
-  public static float deposit(float amount){
+  public float deposit(float amount){
     if (amount > 0){
       balance = balance + amount;
     } else{
-      // NO HACE NADA ESPECIAL -Pedro
+      System.out.println("Invalid amount, your balance is: " + balance);
+      return -1;
     }
     return balance;
   }
-  public static float withdraw(float amount){
-    if(amount < 0 && amount < balance){
-      balance = balance + amount;
+
+  public float withdraw(float amount){
+    if(amount > 0 && amount < balance){
+      balance = balance - amount;
+      return balance;
     } else {
       System.out.println("Invalid amount, your balance is: " + balance);
+      return -1;
     }
   }
-  public static void getBalance(){
+
+  public float getBalance(){
     return balance;
   }
-  public static void getCBU(){
+  public String getCBU(){
     return cbu;
   }
+
 }
