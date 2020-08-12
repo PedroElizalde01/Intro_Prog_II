@@ -1,30 +1,32 @@
 public class Point2D {
-  private float x;
-  private float y;
+  private double x;
+  private double y;
 
-  public Point2D (float x, float y) {
+  public Point2D (double x, double y) {
     this.x = x;
     this.y = y;
   }
-  public float getDistance(Point2D point) { // NO ENTIENDO BIEN ESTE- Pedro
-    x = this.x;
-    y = this.y;
+  public double getDistance(Point2D point) { // NO ENTIENDO BIEN ESTE- Pedro
+    double x = this.x;
+    double y = this.y;
+    double module = Math.sqrt((Math.pow(x, 2)) + (Math.pow(y, 2)));
+    return module;
 
   }
-  public float add(Point2D point){
+  //public double add(Point2D point){
 
-  }
-  public float getX(){
+  //}
+  public double getX(){
     return x;
   }
-  public float getY(){
+  public double getY(){
     return y;
   }
-  public float getDistanceToOrigin(Point2D point){
-    x = point.getX();
-    y = point.getY();
-    n = (Math.pow((x-0)) + Math.pow((y-0)));
-    d = Math.sqr(n);
+  public double getDistanceToOrigin(Point2D point){
+    double x = point.getX();
+    double y = point.getY();
+    double n = ((Math.pow((x-0),2)) + (Math.pow((y-0),2)));
+    double d = Math.sqrt(n);
     return d;
   }
 }
