@@ -6,4 +6,7 @@ public class Circle {
     this.radius = radius;
     this.center = center;
   }
+  public void center(){
+    return this.center;
+  }
 }
