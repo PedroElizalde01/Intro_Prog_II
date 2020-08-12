@@ -6,13 +6,13 @@ public class Point2D {
     this.x = x;
     this.y = y;
   }
-  public float getDistance(Point2D point) { //NO ENTIENDO BIEN ESTE- Pedro
+  public float getDistance(Point2D point) { // NO ENTIENDO BIEN ESTE- Pedro
     x = this.x;
     y = this.y;
 
   }
   public float add(Point2D point){
-    
+
   }
   public float getX(){
     return x;
