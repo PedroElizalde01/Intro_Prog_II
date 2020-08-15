@@ -19,20 +19,22 @@ public class BankAccountTest{
     int num = input.nextInt();
       switch(num){
         case 1:
-          BankAccount.getCBU();
+          System.out.println(account.getCBU());
           break;
         case 2:
-          BankAccount.getBalance();
+          System.out.println(account.getBalance());
           break;
         case 3:
           System.out.println("Ingrese la cantidad a depositar: ");
           float a = input.nextFloat();
-          BankAccount.deposit(a);
+          account.deposit(a);
+          System.out.println(account.getBalance());
           break;
         case 4:
           System.out.println("Ingrese la cantidad a retirar: ");
           float b = input.nextFloat();
-          BankAccount.withdraw(b);
+          account.withdraw(b);
+          System.out.println(account.getBalance());
           break;
         case 5:
           System.out.println("Adios, vuelva pronto!");
