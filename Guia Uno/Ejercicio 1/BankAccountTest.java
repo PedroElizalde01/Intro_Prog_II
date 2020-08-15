@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-// NO HAY BUENA INTERACCION ENTRE LAS CLASES -Pedro
-
 public class BankAccountTest{
   public static void main(String[] args) {
     String cbu = "A123DR456AS";
