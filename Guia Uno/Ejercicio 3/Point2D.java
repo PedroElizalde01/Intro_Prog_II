@@ -6,11 +6,10 @@ public class Point2D {
     this.x = x;
     this.y = y;
   }
-  public double getDistance(Point2D point) { // NO ENTIENDO BIEN ESTE- Pedro
-    double x = this.x;
-    double y = this.y;
-    double module = Math.sqrt((Math.pow(x, 2)) + (Math.pow(y, 2)));
-    return module;
+  public String getDistance(Point2D point) { // NO ENTIENDO BIEN ESTE- Pedro
+    double x = point.getX();
+    double y = point.getY();
+    return ("("+x+" ; "+y+")");
 
   }
   //public double add(Point2D point){
@@ -25,8 +24,7 @@ public class Point2D {
   public double getDistanceToOrigin(Point2D point){
     double x = point.getX();
     double y = point.getY();
-    double n = ((Math.pow((x-0),2)) + (Math.pow((y-0),2)));
-    double d = Math.sqrt(n);
+    double d = Math.sqrt((Math.pow(x, 2)) + (Math.pow(y, 2)));
     return d;
   }
 }
