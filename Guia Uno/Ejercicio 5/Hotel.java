@@ -2,21 +2,14 @@ import java.util.Scanner;
 
 public class Hotel {
   public static void main(String[] args) {
-    int n = 0;
     Scanner input = new Scanner(System.in);
-    while (true){
-      System.out.println("¿Desea registrar un cliente?");
-      String answer = input.nextLine();
-      if(answer == "no"){
-        System.out.println("Gracias por contar con nosotros");
-        break;
-      } else {
-        createUser();
-        n = n+1;
-
-      }
-
+    System.out.println("¿Cuántos clientes desea registrar?");
+    int n = input.nextInt();
+    String[] clients;
+    for(int i = 0; i < n; i++){
+      Register user = createUser();
     }
+
   }
   public static Register createUser(){
     Scanner input = new Scanner(System.in);
