@@ -7,31 +7,36 @@ public class BankAccount{
     this.balance = balance;
   }
 
-  public float deposit(float amount){
-    if (amount > 0){
-      balance = balance + amount;
-    } else{
-      System.out.println("Invalid amount, your balance is: " + balance);
-      return -1;
-    }
-    return balance;
-  }
+	public void deposit(float amount){
+		if(amount > 0){
+			setBalance(getBalance() + amount);
+		} else {
+			System.out.println("Invalid amount, your balance is : " + balance);
+		}
+	}
 
-  public float withdraw(float amount){
-    if(amount > 0 && amount < balance){
-      balance = balance - amount;
-      return balance;
-    } else {
-      System.out.println("Invalid amount, your balance is: " + balance);
-      return -1;
-    }
-  }
 
-  public float getBalance(){
-    return balance;
-  }
-  public String getCBU(){
-    return cbu;
-  }
+	public void withdraw(float amount){
+		if(amount > 0 && amount <= balance){
+			setBalance(getBalance() - amount);
+		} else {
+			System.out.println("Invalid amount, your balance is : " + balance);
+		}
+	} 
 
+	public float getBalance(){
+		return balance;
+	}
+
+	public void setBalance(float balance){
+		this.balance = balance;
+	}
+
+	public String getCbu(){
+		return cbu;
+	}
+
+	public void setCbu(String cbu){
+		this.cbu = cbu;
+	}
 }

@@ -17,7 +17,7 @@ public class BankAccountTest{
     int num = input.nextInt();
       switch(num){
         case 1:
-          System.out.println(account.getCBU());
+          System.out.println(account.getCbu());
           break;
         case 2:
           System.out.println(account.getBalance());
