@@ -8,7 +8,7 @@ public class Hotel {
     String[] clients;
     for(int i = 0; i < n; i++){
       Register user = createUser();
-    }
+    } // UNA VEZ QUE CREO LAS TRES CLASES, TENGO QUE LLAMAR SOLO UNA PARTE DE SUS DATOS -Pedro
 
   }
   public static Register createUser(){
