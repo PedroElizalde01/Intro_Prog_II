@@ -1,8 +1,8 @@
 public class Standard extends Room{
-	private int price;
-	private int people;
+	private int price = 2000;
+	private int people = 2;
 
-	public Standard(int price, int people){
+	public Standard(){
 		this.price = price;
 		this.people = people;
 	}

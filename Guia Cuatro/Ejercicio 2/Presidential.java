@@ -1,8 +1,8 @@
 public class Presidential extends Room{
-	private int price;
-	private int people;
+	private int price = 4000;
+	private int people = 2;
 
-	public Presidential(int price, int people){
+	public Presidential(){
 		this.price = price;
 		this.people = people;
 	}

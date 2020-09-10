@@ -1,8 +1,8 @@
 public class Suite extends Room{
-	private int price;
-	private int people;
+	private int price = 1000;
+	private int people = 4;
 
-	public Suite(int price, int people){
+	public Suite(){
 		this.price = price;
 		this.people = people;
 	}
