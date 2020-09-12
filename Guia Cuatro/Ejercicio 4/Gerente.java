@@ -1,18 +1,17 @@
 public class Gerente extends Empleado{
 
+	public Gerente(double sueldo, double legajo){
+		sueldo = 1000;
+		legajo = 1000;
+	}
+
 	@Override
 	public double getSueldo(int n){
 		if(n != 0){
-			return this.sueldo;
+			return sueldo;
 		} else {
-			double x = n*1.01;
-			return this.sueldo*x;
+			double x = n * 1.01;
+			return sueldo * x;
 		}
 	}
-
-	@Override
-	public double getLegajo(){
-		return this.legajo;
-	}
-
 }
