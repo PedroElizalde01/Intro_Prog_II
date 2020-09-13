@@ -3,4 +3,5 @@ public abstract class Room{
 	private int people;
 	public abstract int getPrice();
 	public abstract int getPeople();
+	public abstract String type();
 }

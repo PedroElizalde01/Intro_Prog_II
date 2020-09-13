@@ -15,4 +15,8 @@ public class Presidential extends Room{
 	public int getPeople(){
 		return this.people;
 	}
+	@Override
+	public String type(){
+		return "Presidencial";
+	}
 }

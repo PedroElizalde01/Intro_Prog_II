@@ -15,4 +15,8 @@ public class Standard extends Room{
 	public int getPeople(){
 		return this.people;
 	}
+	@Override
+	public String type(){
+		return "Estándar";
+	}
 }

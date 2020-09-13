@@ -16,4 +16,9 @@ public class Suite extends Room{
 	public int getPeople(){
 		return this.people;
 	}
+
+	@Override
+	public String type(){
+		return "Suite";
+	}
 }
