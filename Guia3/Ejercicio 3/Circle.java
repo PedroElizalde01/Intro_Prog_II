@@ -10,7 +10,4 @@ public class Circle{
     public double area(){
       return Math.PI * Math.pow(radius,2);
     }
-    public double diagonal(){
-      return radius*2;
-    }
 }
